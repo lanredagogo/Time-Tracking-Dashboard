@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(226, 43%, 10%);
+}
+
+.time-tracker {
+    margin: 150px;
+    max-width: 1400px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.tracker1:nth-of-type(1) {
+    
+    grid-row: 1/3;
+    color: white;
+}
+
+
+
+.timing1 {
+    background-color: hsl(235, 46%, 20%);
+    height: 150px;
+    border-radius:;
+    
+        
+        
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 200;
+}
+
+.profile {
+    width: 248px;
+    height: 350px;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: hsl(246, 80%, 60%);
+    
+}
+
+.profile p, .timing > p:last-child  {
+    font-size: 14px;
+    color: hsl(236, 100%, 87%);
+}
+
+.profile-img {
+    border: 3px solid white;
+    border-radius: 50px;
+    margin-bottom: 30px;
+}
+
+
+.tracker {
+    background-color: hsl(235, 45%, 61%);
+    border-radius: 20px;
+    position: relative;
+    
+    
+}
+
+.tracker:nth-of-type(2) {
+    background-color: hsl(15, 100%, 70%);
+}
+
+.tracker:nth-of-type(3) {
+    background-color: hsl(195, 74%, 62%);
+}
+
+.tracker:nth-of-type(4) {
+    background-color: hsl(348, 100%, 68%);
+}
+
+.tracker:nth-of-type(5) {
+    background-color: hsl(145, 58%, 55%);
+}
+.tracker:nth-of-type(6) {
+    background-color: hsl(264, 64%, 52%);
+}
+.tracker:nth-of-type(7) {
+    background-color: hsl(43, 84%, 65%);
+}
+
+.timing {
+    background-color: hsl(235, 46%, 20%);
+    color: white;
+    height: 200px;
+    margin-top: 40px;
+    border-radius: 20px;
+    z-index: -2;
+}
+
+.icon {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    
+}
+
+
+
+
+.work {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    font-weight: 200;
+    
+}
+
+.timing p:last-child {
+    margin-left: 20px;
+    
+}
+
+.timing1 p {
+margin-left: 25px;
+padding-top: 20px;
+font-size: 15px;
+color: hsl(236, 100%, 87%);
+}
+
+.timing1 p:nth-child(2) {
+    color: white;
+}
+
+
+@media (max-width:600px) {
+    .time-tracker {
+            margin: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 1fr);
+            gap: 10px;
+        }
+
+                .tracker1:nth-of-type(1) {
+                    grid-row: 1;
+                    color: white;
+                }
+
+                                .profile {
+                                    display: flex;
+                                    align-items: center;
+                                    gap: 15px;
+                                    width: 575px;
+                                    height: fit-content;
+                                }
+
+                                .profile-img {
+                                    margin: 20px;
+                                }
+
+                                
+
+                               
+
+                                .timing1 {
+                                    display: flex;
+                                    justify-content:space-evenly;
+                                    align-items: center;
+                                    height: 80px;
+                                    font-size: 15px;
+                                }
+
+                                .duration {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin-right: 20px;
+                                    margin-left: 10px;
+                                    margin-bottom: 10px;
+                                }
+
+                                .work {
+                                    font-size: 24px;
+                                    margin: 15px;
+                                    margin-top: 20px;
+                                }
+}
+
+
+
+
+
